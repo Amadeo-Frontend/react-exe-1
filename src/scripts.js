@@ -1,6 +1,4 @@
-window.addEventListener("load", function() {
-  alert("Hello World......Oi, professor(a)!");
-});
+
 function inserirTexto(elemento, texto) {
   // Método 1: innerHTML
   elemento.innerHTML = texto;
@@ -52,24 +50,7 @@ inserirTexto(document.getElementsByTagName("li")[0], "Hello World!");
 inserirTexto(document.getElementsByTagName("li")[1], "Hello World!");
 inserirTexto(document.getElementsByTagName("li")[2], "Hello World!");
 
-function inserirTextoMaquinaEscrever(elemento, texto, intervalo) {
-  // Adicione uma animação de transição no estilo CSS
-  elemento.style.transition = "all 0.1s";
 
-  // Use uma função recursiva para inserir cada caractere do texto com um atraso
-  // especificado pelo intervalo
-  (function escrever(i) {
-    if (i < texto.length) {
-      elemento.innerHTML += texto.charAt(i);
-      setTimeout(function() {
-        escrever(i + 1);
-      }, intervalo);
-    }
-  })(0);
-}
-
-// Chame a função passando o elemento, o texto e o intervalo em milissegundos
-inserirTextoMaquinaEscrever(document.getElementById("elemento1"), "Hello World!", 100);
 
 
 
