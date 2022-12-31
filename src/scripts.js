@@ -1,9 +1,7 @@
-
 function inserirTexto(elemento, texto) {
   // Método 1: innerHTML
   elemento.innerHTML = texto;
   elemento.style.font = "25px bold";
-
 
   // Método 2: textContent
   elemento.textContent = texto;
@@ -34,7 +32,6 @@ function inserirTexto(elemento, texto) {
   elemento.classList.add("texto-destaque");
   elemento.textContent = texto;
 
-
   // Método 10: insertBefore
   const novoElemento2 = document.createElement("p");
   novoElemento2.textContent = texto;
@@ -49,12 +46,3 @@ inserirTexto(document.getElementsByTagName("span")[0], "Hello World!");
 inserirTexto(document.getElementsByTagName("li")[0], "Hello World!");
 inserirTexto(document.getElementsByTagName("li")[1], "Hello World!");
 inserirTexto(document.getElementsByTagName("li")[2], "Hello World!");
-
-
-
-
-
-
-
-
-
